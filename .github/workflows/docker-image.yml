@@ -14,11 +14,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build the Docker image
+    - name: Build the Docker image for code coverage
       run: |
         cd src 
         chmod +777 ./testNetCoreWin.bat 
         ./testNetCoreWin.bat
         ls -lh
-        mv ./coveragereport/ ../docs/coveragereport/
+        mv ./coveragereport/ ../docs/
         ls -lh ../docs/coveragereport/
