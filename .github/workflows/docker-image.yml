@@ -17,7 +17,6 @@ jobs:
     - name: Build the Docker image
       run: |
         cd src 
-        pwd 
-        ls -lh 
         chmod +777 ./testNetCoreWin.bat 
         ./testNetCoreWin.bat
+        ls -lh
