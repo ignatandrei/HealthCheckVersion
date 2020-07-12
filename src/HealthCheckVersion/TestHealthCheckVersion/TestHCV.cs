@@ -1,3 +1,4 @@
+using HCVersion;
 using System;
 using Xunit;
 
@@ -15,7 +16,7 @@ namespace TestHealthCheckVersion
             string v = hcv.GetStartingAssemblyInformation();
             #endregion
             #region Assert
-            Assert.Equal("1.0.0.0", v);
+            Assert.Equal("15.0.0.0", v);
             #endregion
         }
         [Fact]
