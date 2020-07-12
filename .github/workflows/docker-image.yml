@@ -15,8 +15,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: cd src |
-           pwd 
-           ls -lh 
-           chmod +777 ./testNetCoreWin.bat 
-           ./testNetCoreWin.bat
+      run: |
+        cd src 
+        pwd 
+        ls -lh 
+        chmod +777 ./testNetCoreWin.bat 
+        ./testNetCoreWin.bat
