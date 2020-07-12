@@ -20,11 +20,26 @@ services.AddHealthChecks()
     .AddCheck<HealthCheckVersion>("HealthCheckVersion");
 ```
 
+*Better* 
+
+``` csharp
+string name = Assembly.GetExecutingAssembly().GetName().Name;
+services.AddHealthChecks()
+    .AddCheck<HealthCheckVersion>(name);
+
+```   
+
+
+
 Navigate to the HealthCheck JSON and see the reporting of the version of the starting assembly and of the own HealthCheckVersion assembly.
 
 And that will be all!
 
 (Maybe later I will think about a configuration for this - in order to customize the reporting)
+
+*Better* 
+
+Add Xabaril as in the NetCore31HC project in this repository and navigate to /healthchecks-ui
 
 ## Tests
 

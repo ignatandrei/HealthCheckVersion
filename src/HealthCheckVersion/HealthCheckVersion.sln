@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHealthCheckVersion", "T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheckVersion", "HealthCheckVersion\HealthCheckVersion.csproj", "{40013DF9-13B0-4D56-A30D-11135DB24067}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore31HC", "NetCore31HC\NetCore31HC.csproj", "{3EBEBCA9-9992-444E-9493-F3A67AC3F142}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{40013DF9-13B0-4D56-A30D-11135DB24067}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40013DF9-13B0-4D56-A30D-11135DB24067}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40013DF9-13B0-4D56-A30D-11135DB24067}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EBEBCA9-9992-444E-9493-F3A67AC3F142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EBEBCA9-9992-444E-9493-F3A67AC3F142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EBEBCA9-9992-444E-9493-F3A67AC3F142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EBEBCA9-9992-444E-9493-F3A67AC3F142}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
