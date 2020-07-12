@@ -20,5 +20,7 @@ jobs:
         chmod +777 ./testNetCoreWin.bat 
         ./testNetCoreWin.bat
         ls -lh
-        mv ./coveragereport/ ../docs/
+        cp -r  ./coveragereport/* ../docs/
+        rm -R ./coveragereport/
         ls -lh ../docs/coveragereport/
+        ls -lh 
