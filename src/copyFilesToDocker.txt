@@ -17,6 +17,6 @@ RUN coverlet HealthCheckVersion/TestHealthCheckVersion/bin/Debug/netcoreapp3.1/T
 RUN reportgenerator "-reports:coverage.opencover.xml" "-targetdir:coveragereport" "-reporttypes:HTMLInline;HTMLSummary;Badges"
 RUN ls -lh
 RUN pwsh ./setVersion.ps1
-RUN dotnet pack HealthCheckVersion/HealthCheckVersion/HealthCheckVersion.csproj -p:IncludeSymbols=true -p:SymbolPackageFormat=snupkg -o pkg
+RUN dotnet pack HealthCheckVersion/HealthCheckVersion/HealthCheckVersion.csproj --include-symbols --include-source -o pkg
 CMD tail -f /dev/null
 

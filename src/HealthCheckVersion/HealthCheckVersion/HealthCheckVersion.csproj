@@ -2,11 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <PublishRepositoryUrl>true</PublishRepositoryUrl>
-    <EmbedUntrackedSources>true</EmbedUntrackedSources>
-    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <IncludeSymbols>true</IncludeSymbols>
+    <IsPackable>true</IsPackable>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -19,6 +15,23 @@
   </ItemGroup>
   <PropertyGroup>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <Authors>Andrei Ignat</Authors>
+    <Company />
+    <Description>This NuGet package will report via Health Check the version of the starting assembly . Also, it should report his own version - but not direct .
+
+It will be easy to demo via Xabaril
+
+Add the NuGet package HealthCheckVersion.
+
+In the Startup.cs
+
+services.AddHealthChecks()
+    .AddCheck&lt;HealthCheckVersion&gt;("HealthCheckVersion");</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/ignatandrei/HealthCheckVersion</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ignatandrei/HealthCheckVersion</RepositoryUrl>
+    <RepositoryType>Github</RepositoryType>
+    <PackageTags>HealthCheck;.NET Core 3.1</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
