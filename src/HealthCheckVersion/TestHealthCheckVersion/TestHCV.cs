@@ -1,5 +1,7 @@
 using HCVersion;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 using System;
+using System.Threading.Tasks;
 using Xunit;
 
 namespace TestHealthCheckVersion
@@ -30,6 +32,19 @@ namespace TestHealthCheckVersion
             #endregion
             #region Assert
             Assert.Equal("1.0.0.0", v);
+            #endregion
+        }
+        [Fact]
+        public async Task TestMainClass()
+        {
+            #region Arrange
+            IHealthCheck hcv = new HealthCheckVersion();
+            #endregion
+            #region Act
+            var res = await hcv.CheckHealthAsync(null);
+            #endregion
+            #region Assert
+            Assert.Equal(HealthStatus.Healthy, res.Status);
             #endregion
         }
     }
