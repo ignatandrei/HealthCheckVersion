@@ -3,6 +3,8 @@
 ## Badges
 ![CI](https://github.com/ignatandrei/HealthCheckVersion/workflows/GenerateCodeCoverage/badge.svg)
 ![Line Coverage](https://ignatandrei.github.io/HealthCheckVersion/coveragereport/badge_linecoverage.svg)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ignatandrei/HealthCheckVersion/blob/master/LICENSE)
+[![NuGet](https://img.shields.io/nuget/v/HealthCheckVersion.svg)](https://www.nuget.org/packages/HealthCheckVersion)
 
 ## What it is
 
