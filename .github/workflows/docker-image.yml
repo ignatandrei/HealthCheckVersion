@@ -35,7 +35,7 @@ jobs:
         ls -lh src/pkg/
 
     - name: Upload artifacts
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v2
       with:
         name: package
         path: src/pkg/*.snupkg
