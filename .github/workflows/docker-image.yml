@@ -41,4 +41,9 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-
+ 
+    - name: Upload math result for job 1
+      uses: actions/upload-artifact@v1
+      with:
+        name: package
+        path: src/pkg/*.snupkg
