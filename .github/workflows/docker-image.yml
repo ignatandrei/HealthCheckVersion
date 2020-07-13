@@ -27,6 +27,23 @@ jobs:
         ls -lh ../docs/coveragereport/
         echo 'here'
         ls -lh 
+ 
+ 
+    - name: Verify pkg
+      run: |
+        ls -lh src/
+        ls -lh src/pkg/
+
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v1
+      with:
+        name: package
+        path: src/pkg/*.snupkg
+
+    - name: Delete pkg
+      run: |
+        cd src 
+        rm -R ./pkg/
     
     - name: run commit
       run: |         
@@ -41,9 +58,3 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
- 
-    - name: Upload math result for job 1
-      uses: actions/upload-artifact@v1
-      with:
-        name: package
-        path: src/pkg/*.snupkg
