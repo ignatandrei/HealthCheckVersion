@@ -1,5 +1,9 @@
 # HealthCheckVersion
 
+## Badges
+![CI](https://github.com/ignatandrei/HealthCheckVersion/workflows/GenerateCodeCoverage/badge.svg)
+![Line Coverage](https://ignatandrei.github.io/HealthCheckVersion/coveragereport/badge_linecoverage.svg)
+
 ## What it is
 
 This NuGet package will report via [Health Check](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/health-checks)  the version of the starting  assembly . Also, it should report his own version - but not direct .
@@ -46,9 +50,8 @@ Add Xabaril as in the NetCore31HC project in this repository and navigate to /he
 The application has also tests to see if it works. I will test just the obtaining the version of the starting assembly and HealthCheckVersion own assembly.
 
 The first test will test the functions
+1. GetStartingAssemblyInformation
+2. GetHCVAssemblyInformation
 
-GetStartingAssemblyInformation
-
-GetHCVAssemblyInformation
-
+[Code Coverage Report](https://ignatandrei.github.io/HealthCheckVersion/coveragereport/index.html)
 
